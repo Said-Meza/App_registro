@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Registro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+      
+    <div class="contenedor">
+        <header>
+            <h1>REGISTRO PARA EL EVENTO</h1>
+            <p>Ingrese su Informacion</p>
+        </header>
+        <div class="form">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" required class="form-controll" name="nombre" id="" placeholder="Ej. Juan Perez Hernandez">
+            
+            <label for="Telefono">Telefono:</label>
+            <input type="text" class="form-x5" name="Telefono" id="Telefono" placeholder="Ej. 782 422 32 43">
+        
+
+            <label for="instituto">Instituto:</label>
+            <input type="text" required class="form-x1" name="instituto" id="hola" placeholder="Ej. Instituto Tecnologico Superio de Poza Rica">
+            
+            <label for="correo">Correo:</label>
+            <input type="email" class="form-x2" name="correo" id="hola" placeholder="Ej. ITSPR@ITSPR.COM">
+            
+            <label class="label" for="ocupacion">Ocupacion:</label><br />
+            <select class="form-x4" name="opcion2" id="ocupacion">
+                <option value="0">[Escoje una Opcion]</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Maestro">Maestro</option>
+                <option value="Visitante">Visitante</option>
+                <option value="Expositor">Expositor</option>
+                <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
+                <option value="Administrativo">Administrativo</option>
+            </select>
+
+            <label class="label" for="semestre">Nivel Educativo:</label><br />
+            <select class="form-x3" name="opcion" id="semestre">
+                <option value="">[Escoje un Nivel Educativo]</option>
+                <option value="Primaria Publica">Primaria Publica</option>
+                <option value="Primaria Privada">Primaria Privada</option>
+                <option value="Secundaria Publica">Secundaria Publica</option>
+                <option value="Secundaria Privada">Secundaria Privada</option>
+                <option value="Bachillerato Publica">Bachillerato Publica</option>
+                <option value="Bachillerato Privada">Bachillerato Privada</option>
+                <option value="Universidad publica">Universidad publica</option>
+                <option value="Universidad Privada">Universidad Privada</option>
+                <option value="Ninguno">Ninguno</option>
+            </select>
+
+            
+
+            <button class="btn btn-primary">Generar Codigo QR</button>
+
+        </div>
+        <div class="qr_code">
+            <label for="">"Favor de Descargar la Imagen y Presentarla el Dia del Evento"</label>
+            <img src="img/qr.png" alt="" >
+            <button class="" id="descargar">Descargar QR</button>
+            <a name="" id="" class="btn btn-primary" href="index.html" role="button">Regresar</a>
+        </div>
+    </div>
+
+    <script src="qr.js"></script>
+    <script src="filesaver.js"></script>
+  </body>
+</html>

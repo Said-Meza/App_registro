@@ -1,0 +1,199 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Código QR con Javascript</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="estilos.css" />
+		
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script defer src="app.js"></script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<form action="" id="formulario" class="formulario">
+				<input type="text" id="link" placeholder="Escribe el texto o URL" />
+				<button class="btn">Generar QR</button>
+			</form>
+
+			<div id="contenedorQR" class="contenedorQR"></div>
+		</div>
+	</body>
+</html>
+<!-- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLEY_ITSPOZARICA OFICIAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/voleibol.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.php">Inicio</a>
+            <a href="#">Home</a>
+            <a href="seccion/inicio.php">Registrar</a>
+
+        </nav>
+        <seccion class="textos-header">
+            <i> </i>
+            <h1>"EVENTO MULTICULTURAL"</h1>
+            <i>
+                <h2> Por Tecnologico Poza Rica</h2>
+            </i>
+        </seccion>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C238.55,247.22 351.74,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+
+    </header>
+    <main>
+
+
+        <seccion class="">
+            <h2 class="titulo">Registro</h2>
+            <div class="formulario-interior">
+
+                <div class="">
+                    <form action="" id="formulario" class="formulario">
+
+                        <fieldset>
+                            <legend> Datos </legend>
+                            <label class="label" for="nombre">Nombre(s):</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder=" Nombre Alumno"
+                                required="true" /><br><br>
+
+                            <label class="label" for="apellido">Apellido(s):</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder=" Apellidos"
+                                required="true" /><br><br>
+
+                            <label class="label" for="email">Email:</label><br />
+                            <input type="text" id="email" name="link" placeholder=" Email" required="true" /><br><br>
+
+                            <label class="label" for="escuela">Nombre del Instituto:</label><br />
+                            <input type="text" id="escuela" name="link" placeholder=" Escuela"
+                                required="true" /><br><br>
+
+
+                            <label class="label" for="semestre">Semestre:</label><br />
+                            <select class="" name="opcion" id="semestre">
+                                <option value="0">(escoje un semestre)</option>
+                                <option value="1°">1°</option>
+                                <option value="2°">2°</option>
+                                <option value="3°">3°</option>
+                                <option value="4°">4°</option>
+                                <option value="5°">5°</option>
+                                <option value="6°">6°</option>
+                                <option value="7°">7°</option>
+                                <option value="8°">8°</option>
+                                <option value="9°">9°</option>
+                                <option value="10°">10°</option>
+                                <option value="11°">11°</option>
+                                <option value="12°">12°</option>
+                            </select>
+
+                            <br><br>
+                            <button class="btn submit">Generar QR</button>
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+                    <div id="contenedorQR" class="contenedorQR"></div>
+
+                </div>
+            </div>
+        </seccion>
+
+
+        <section class="portafolio">
+            <h2 class="titulo">COMPROMETIDOS CON LA EDUCACION</h2>
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <img src="Img/robot01.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/ic.png" alt="">
+                        <p>Compromiso</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="Img/fondo01.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/ic.png" alt="">
+                        <p>Responsabilidad ambiental</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="img/carrera01.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/ic.png" alt="">
+                        <p>Lealtad</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="Img/chua01.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/ic.png" alt="">
+                        <p>Trabajo en equipo</p>
+                    </div>
+                </div>
+
+
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+
+            <div class="content-foo">
+                <h4>Siguenos en Redes Sociales</h4>
+                <p>
+
+                    <a href="https://www.youtube.com/c/TecnologicoDePozaRicaOficial"><img src="img/youtube.png"
+                            width="40px"></a>
+                    <a href="https://www.facebook.com/ITSPozaRica"><img src="img/facebook.png" width="40px"></a>
+                    <a href="https://twitter.com/itspr_oficial?lang=es"><img src="img/twiter.png" width="40px"></a>
+                    <a href="https://www.instagram.com/itspr_oficial/"><img src="img/insta.png" width="40px"></a>
+                </p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Instituto Tecnologico Superio de Poza Rica</h4>
+                <p> Calle Luis Donaldo Colosio Murrieta S/N Col. <br>
+                    Arroyo del Maíz C.P. 93230 Poza Rica, Veracruz - México <br>
+                    Tel: 782 821 6901.
+                </p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Horario de Atención</h4>
+                <p>8:00 AM - 2:30 PM </p>
+                <p>2:30 PM - 5:30 PM</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Capitulo ISC</h2>
+
+
+    </footer>
+</body>
+
+
+</html>

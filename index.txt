@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>registro alv</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+      
+    <div class="contenedor">
+        <header>
+            <h1>codigo qr</h1>
+            <p>ingrese su informacion</p>
+        </header>
+
+        <div class="form">
+            <input type="text" class="form-controll" name="" id="" placeholder="nombre de la persona">
+            <button class="btn btn-primary">Generarr Codigo QR</button>
+        </div>
+        <div class="qr_code">
+            <img src="img/qr.png" alt="" >
+            <button class=" fas fa-arrow-down" id="descargar"></button>
+        </div>
+    </div>
+
+
+
+
+    <script src="qr.js"></script>
+    <script src="filesaver.js"></script>
+  </body>
+</html>

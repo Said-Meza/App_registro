@@ -1,0 +1,10 @@
+const contenedorQR = document.getElementById('contenedorQR');
+const formulario = document.getElementById('formulario');
+
+const QR = new QRCode(contenedorQR);
+
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault();
+	const liga = formulario.nombre.value + ','+formulario.apellido.value+ ','+formulario.email.value  + ','+formulario.escuela.value + ',' + formulario.semestre.value;
+	QR.makeCode(liga);
+});
