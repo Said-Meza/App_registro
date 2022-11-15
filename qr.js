@@ -25,9 +25,7 @@ let container = document.querySelector(".contenedor"),
                 {
                     'access-control-allow-origin': '*',
                     'content-type': 'application/json'
-                    
-
-
+                 
                 },
             body:JSON.stringify
             (
