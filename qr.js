@@ -17,7 +17,7 @@ let container = document.querySelector(".contenedor"),
 
     boton.addEventListener("click", () => {
         let qrvalue = qrInput.value;
-
+//parece que ya jalo
         fetch('https://apiposgresql-production.up.railway.app/users',
         {
             method:'POST',
@@ -26,6 +26,8 @@ let container = document.querySelector(".contenedor"),
                     'access-control-allow-origin': '*',
                     'content-type': 'application/json'
                     
+
+
                 },
             body:JSON.stringify
             (
